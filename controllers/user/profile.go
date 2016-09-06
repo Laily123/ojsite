@@ -27,7 +27,7 @@ func (this *ProfileController) Get() {
 		this.Data["title"] = this.Data["nickname"].(string) + this.Lang("title_profile")
 	}
 
-	this.TplNames = "user/profile.tpl"
+	this.TplName = "user/profile.tpl"
 
 }
 
@@ -37,5 +37,5 @@ func (this *ProfileController) Post() {
 		"msg":"only get method is valid",
 	}
 
-	this.ServeJson()
+	this.ServeJSON()
 }

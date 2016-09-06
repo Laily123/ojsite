@@ -1,5 +1,5 @@
 {{{template "inc/header.tpl" .}}}
-{{{asset "sass/index.scss"}}}
+<!-- {{{asset "sass/index.scss"}}} -->
         <div class="index-info-box">
           <div class="msg">
             <h3>项目目前处于开发阶段，希望跟进或交流的同学欢迎加入QQ群：235149571</h3>

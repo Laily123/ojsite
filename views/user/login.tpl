@@ -1,5 +1,5 @@
 {{{template "inc/header.tpl" .}}}
-{{{asset "sass/login.scss"}}}
+<!-- {{{asset "sass/login.scss"}}} -->
 	<div class="info">&nbsp</div>
 	<div class="login">
 		<form action="/login">
@@ -13,5 +13,5 @@
 			</ul>
 		</form>
 	</div>
-{{{asset "js/user.js"}}}
+<!-- {{{asset "js/user.js"}}} -->
 {{{template "inc/footer.tpl" .}}}

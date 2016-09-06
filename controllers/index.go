@@ -1,14 +1,10 @@
 package controllers
 
 import (
-// "fmt"
+	"github.com/labstack/echo"
+	"net/http"
 )
 
-type MainController struct {
-	BaseController
-}
-
-func (this *MainController) Get() {
-	this.Data["title"] = this.Lang("title_index")
-	this.TplNames = "index.tpl"
+func Index(c echo.Context) error {
+	return c.String(http.StatusOK, "welcome")
 }

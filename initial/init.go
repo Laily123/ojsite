@@ -8,20 +8,20 @@ import (
 
 // 初始化
 func Initialize() {
-	CheckTplVersion()
+	//CheckTplVersion()
 
-	InitLang()
-	InitTplFunc()
-	InitSql()
-	InitJudger()
-	InitCron()
+	//InitLang()
+	//InitTplFunc()
+	//InitSql()
+	//InitJudger()
+	//InitCron()
 
 	routers.Init()
 }
 
 // 模版与应用版本匹配检查
 func CheckTplVersion() {
-	tmpVer := com.ReadFile("views/VERSION")
+	tmpVer, _ := com.ReadFile("views/VERSION")
 	if AppVer == tmpVer {
 		return
 	} else {
